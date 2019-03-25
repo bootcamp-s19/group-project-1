@@ -21,7 +21,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card {
-  background-color: rgb(177, 176, 176);
+  background-color: ;
 }
 img {
   max-width: 100%;
