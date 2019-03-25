@@ -1,31 +1,21 @@
 <template>
   <div id="app">
+    <NavBar></NavBar>
 
-<NavBar>
-</NavBar>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 
-
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-
-    <button id="show-modal" @click="showModal = true">Suscribe</button>
-    <Suscribe v-if="showModal" @close="showModal = false"></Suscribe>
   </div>
 </template>
 
 <script>
-
 import HelloWorld from "./components/HelloWorld.vue";
-import NavBar from './components/NavBar.vue'
-import Suscribe from "./components/Suscribe";
+import NavBar from "./components/NavBar.vue";
 
 export default {
   name: "app",
   components: {
-
     HelloWorld,
-    NavBar,
-    Suscribe
+    NavBar
   },
   data() {
     return {
@@ -67,7 +57,6 @@ export default {
         }
       ]
     };
-
   }
 };
 </script>

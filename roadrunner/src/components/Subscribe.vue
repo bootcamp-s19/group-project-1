@@ -1,12 +1,12 @@
 <template>
-  <div class="Suscribe">
+  <div class="Subscribe">
     <transition name="modal">
       <div class="modal-mask">
         <div class="modal-wrapper">
           <div class="modal-container">
             <div class="modal-header">
               <slot name="header">
-                <h3>Suscribe</h3>
+                <h3>Subscribe</h3>
               </slot>
             </div>
             <div class="modal-body">
@@ -111,7 +111,7 @@
 
 <script>
 export default {
-  name: "suscribe",
+  name: "subscribe",
   data() {
     return {
         name: '',
