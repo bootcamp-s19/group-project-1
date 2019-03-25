@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
+    <AboutUs></AboutUs>
 
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 
@@ -10,12 +11,14 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from "./components/NavBar.vue";
+import AboutUs from "./components/AboutUs.vue";
 
 export default {
   name: "app",
   components: {
     HelloWorld,
-    NavBar
+    NavBar,
+    AboutUs,
   },
   data() {
     return {
