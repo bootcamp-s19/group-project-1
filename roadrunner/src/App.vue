@@ -1,13 +1,23 @@
 <template>
   <div id="app">
+
+<NavBar>
+</NavBar>
+
+
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import carCards from './components/carCards.vue'
 
+=======
+import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+>>>>>>> 7f14cda6603b2ca8bdf0f0733b460ccd29145429
 export default {
   name: 'app',
   data: function() { 
@@ -50,7 +60,11 @@ export default {
          ]}},
   
   components: {
+<<<<<<< HEAD
     carCards
+=======
+    HelloWorld, NavBar
+>>>>>>> 7f14cda6603b2ca8bdf0f0733b460ccd29145429
   }
 }
 </script>
