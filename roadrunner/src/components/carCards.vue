@@ -1,9 +1,9 @@
 <template>
     <div class="card">
-      <img class="card-img-top" src="holder.js/100x180/" alt="">
+      <img class="card-img-top shadow pl-1 pr-1" src="/img/2016NissanGT-R.png" alt="Nissan Skyline">
       <div class="card-body">
-        <h4 class="card-title">Car Name</h4>
-        <p class="card-text">Car info</p>
+        <h4 class="card-title">GT-R</h4>
+        <p class="card-text">This is a 2016 Nissan GT-R</p>
         <a href="#" class="btn btn-primary btn-lg">Rent</a>
       </div>
     </div>
@@ -20,18 +20,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.card {
+  background-color: rgb(177, 176, 176);
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+img {
+  max-width: 100%;
+  height: auto;
+  background-color: silver;
 }
 </style>

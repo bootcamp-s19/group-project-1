@@ -1,73 +1,12 @@
 <template>
   <div id="app">
-
-<NavBar>
-</NavBar>
-
-
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
-
-<script>
-<<<<<<< HEAD
-import carCards from './components/carCards.vue'
-
-=======
-import HelloWorld from './components/HelloWorld.vue'
-import NavBar from './components/NavBar.vue'
->>>>>>> 7f14cda6603b2ca8bdf0f0733b460ccd29145429
-export default {
-  name: 'app',
-  data: function() { 
-    return{
-      cars: [
-        {
-          make: 'dodge', 
-          model: 'viper',
-          color: 'red',
-          rented: false,
-          img: 'image location',
-          location: '123 awesome inc way'
-        },
-        {
-          make: 'chevy', 
-          model: 'corvette',
-          color: 'blue',
-          rented: true,
-          img: 'image location',
-          location: '456 lexington road'},
-          ],
-          
-          users: [
-          {
-          name: 'name',
-          email: 'email address',
-          age: 34,
-          phone: '895-555-5555',
-          password: 'password',
-          senior: false,
-          },
-          {
-          name: 'name',
-          email: 'email address',
-          age: 66,
-          phone: '895-555-5555',
-          password: 'password',
-          senior: true,
-          },
-         ]}},
-  
-  components: {
-<<<<<<< HEAD
-    carCards
-=======
-    HelloWorld, NavBar
->>>>>>> 7f14cda6603b2ca8bdf0f0733b460ccd29145429
-  }
-}
-</script>
 
 <style>
 #app {
