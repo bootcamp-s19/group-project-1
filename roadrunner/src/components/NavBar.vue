@@ -39,7 +39,8 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">
-              Login
+                <button id="show-modal" @click="showLoginModal = true">Login</button>
+                <Login v-if="showLoginModal" @close="showLoginModal = false"></Login>
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -51,18 +52,21 @@
 
 <script>
 import Subscribe from "./Subscribe";
+import Login from "./Login";
 
 export default {
   name: "NavBar",
   components: {
-    Subscribe
+    Subscribe, 
+    Login
   },
   props: {
     msg: String
   },
   data() {
     return {
-      showModal: false
+      showModal: false,
+      showLoginModal: false      
     };
   }
 };
