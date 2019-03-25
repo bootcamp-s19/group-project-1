@@ -16,7 +16,8 @@ import NavBar from './components/NavBar.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld, NavBar
+    HelloWorld, 
+    NavBar,
   }
 }
 </script>
