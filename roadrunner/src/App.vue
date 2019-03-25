@@ -6,11 +6,13 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import carCards from './components/carCards.vue'
 
 export default {
   name: 'app',
-  data: { cars: [
+  data: function() { 
+    return{
+      cars: [
         {
           make: 'dodge', 
           model: 'viper',
@@ -45,10 +47,10 @@ export default {
           password: 'password',
           senior: true,
           },
-         ],
+         ]}},
   
   components: {
-    HelloWorld
+    carCards
   }
 }
 </script>
