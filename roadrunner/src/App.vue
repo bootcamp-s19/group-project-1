@@ -22,6 +22,7 @@ import Suscribe from "./components/Suscribe";
 export default {
   name: "app",
   components: {
+
     HelloWorld,
     NavBar,
     Suscribe
@@ -66,6 +67,7 @@ export default {
         }
       ]
     };
+
   }
 };
 </script>
