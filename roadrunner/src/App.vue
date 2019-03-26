@@ -1,28 +1,22 @@
 <template>
   <div id="app">
+
+<NavBar></NavBar>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
 
-<NavBar></NavBar>
-
-
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from './components/NavBar.vue'
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
     NavBar,
   },
   data() {

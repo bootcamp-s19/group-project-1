@@ -6,8 +6,7 @@ import plugins from './plugins'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {  
+const state = { 
     cars: [
       {
         make: "dodge",
@@ -44,11 +43,11 @@ export default new Vuex.Store({
         senior: true
       }
     ]
+}
 
-  },
- 
+export default new Vuex.Store({
+  state, 
   actions, 
   plugins,
   mutations,
-
 })
