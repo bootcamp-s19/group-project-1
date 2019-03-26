@@ -2,24 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-<<<<<<< HEAD
-      <router-link to="/about">Details</router-link>
-    </div>
-    <router-view/>
-  </div>
-</template>
-
-=======
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
-
-<NavBar></NavBar>
-
-
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-
+    <NavBar></NavBar>
   </div>
 </template>
 
@@ -77,7 +63,6 @@ export default {
 };
 </script>
 
->>>>>>> 44b9451aa5ab20347d471adc669f987804e3daa3
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
