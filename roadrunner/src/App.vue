@@ -6,22 +6,19 @@
     </div>
     <router-view/>
 
-<NavBar>
-</NavBar>
+<NavBar></NavBar>
 
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
 
-    <button id="show-modal" @click="showModal = true">Suscribe</button>
-    <Suscribe v-if="showModal" @close="showModal = false"></Suscribe>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from './components/NavBar.vue'
-import Suscribe from "./components/Suscribe";
+
 export default {
   name: "app",
   components: {
