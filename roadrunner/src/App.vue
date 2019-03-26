@@ -3,62 +3,34 @@
     <NavBar></NavBar>
     <AboutUs></AboutUs>
 
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+<NavBar></NavBar>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
 
   </div>
 </template>
 
 <script>
+
 import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from "./components/NavBar.vue";
 import AboutUs from "./components/AboutUs.vue";
 
+
 export default {
   name: "app",
   components: {
+
     HelloWorld,
     NavBar,
     AboutUs,
+
   },
   data() {
     return {
-      showModal: false,
-      cars: [
-        {
-          make: "dodge",
-          model: "viper",
-          color: "red",
-          rented: false,
-          img: "image location",
-          location: "123 awesome inc way"
-        },
-        {
-          make: "chevy",
-          model: "corvette",
-          color: "blue",
-          rented: true,
-          img: "image location",
-          location: "456 lexington road"
-        }
-      ],
-      users: [
-        {
-          name: "name",
-          email: "email address",
-          age: 34,
-          phone: "895-555-5555",
-          password: "password",
-          senior: false
-        },
-        {
-          name: "name",
-          email: "email address",
-          age: 66,
-          phone: "895-555-5555",
-          password: "password",
-          senior: true
-        }
-      ]
     };
   }
 };
