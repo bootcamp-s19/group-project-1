@@ -51,7 +51,7 @@
 <script>
 
 export default {
-  name: 'Home',
+  name: 'AboutUs',
   
 }
 </script>
@@ -70,16 +70,4 @@ export default {
 
 
 
-<script>
-export default {
-  name: "AboutUs",
-  props: {
-    msg: String
-  }
-};
-</script>
 
-<style scoped>
-h1 {
-  text-align: left;
-}

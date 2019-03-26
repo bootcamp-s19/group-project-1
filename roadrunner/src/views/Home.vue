@@ -1,6 +1,7 @@
 <template>
   <div class="home">
   <AboutUs></AboutUs>
+  <Header></Header>
 
    
 
@@ -10,6 +11,8 @@
 <script>
     
   import AboutUs from '../components/AboutUs.vue';
+  import Header from '../components/Header.vue';
+
 
 
 
@@ -18,6 +21,8 @@ export default {
   components: {
 
     AboutUs,
+    Header
+    
 
   }
 }
