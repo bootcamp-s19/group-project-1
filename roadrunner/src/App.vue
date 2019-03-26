@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
-    <AboutUs></AboutUs>
+  
 
 
     <div id="nav">
@@ -17,7 +17,7 @@
 
 
 import NavBar from "./components/NavBar.vue";
-import AboutUs from "./components/AboutUs.vue";
+
 
 
 export default {
@@ -26,7 +26,7 @@ export default {
 
 
     NavBar,
-    AboutUs,
+    
 
   },
   data() {
