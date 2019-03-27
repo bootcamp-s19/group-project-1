@@ -5,23 +5,22 @@
     <div class="text-block">
       <h1>ROAD-RUNNER</h1>
       <h3>Exotic Car Rental</h3>
+      
       <button type="button" class="btn btn-dark btn-lg">SEARCH</button>
        <button id="show-modal" @click="showModal = true" class="btn btn-dark btn-lg">SUBSCRIBE</button>
             <Subscribe v-if="showModal" @close="showModal = false"></Subscribe>
-     
+  
            
       <br>
       <br>
 
-      <!-- <div class="col2">
-   <h1> ROAD-RUNNER </h1>
-     <button class="btn">BROWSE</button>
-      <button class="btn">SUBSCRIBE</button>-->
+ 
     </div>
   </div>
 </template>
 
 <style scoped>
+
 
 
 
@@ -55,8 +54,8 @@ h3,
     bottom: 20px;
     left: 20px;
     background-color: black;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
+    /* opacity: 0.7;
+    filter: alpha(opacity=70); */
     color: white;
     padding-left: 70px;
     padding-right: 70px;
@@ -71,8 +70,8 @@ h3,
     bottom: 20px;
     left: 20px;
     background-color:black;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
+    /* opacity: 0.7;
+    filter: alpha(opacity=70); */
     color: white;
     padding-left: 70px;
     padding-right: 70px;
@@ -87,8 +86,8 @@ h3,
     bottom: 20px;
     left: 20px;
     background-color:black;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
+    /* opacity: 0.7;
+    filter: alpha(opacity=70); */
     color: white;
     padding-left: 70px;
     padding-right: 70px;
@@ -103,8 +102,8 @@ h3,
     bottom: 100px;
     left: 180px;
     background-color:black;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
+    /* opacity: 0.7;
+    filter: alpha(opacity=70); */
     color: white;
     padding-left: 70px;
     padding-right: 70px;
