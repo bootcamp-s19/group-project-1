@@ -1,20 +1,20 @@
 <template>
 
-<div class="jumbotron jumbotron-fluid" id="jumbo5">
+<div class="jumbotron jumbotron-fluid" id="jumbo">
          <div class="container">
             <div class="row">
                <div class="container">
                   <footer class="footer text-center">
                      <div class="container">
                         <div class="row">
-                           <div class="col-md-4 mb-5 mb-lg-0">
-                              <h4 class="text-uppercase mb-4" id="location">Location</h4>
-                              <p class="lead mb-0" id="location2">3009 Wishbone Ln
-                                 <br>Lexington, KY 40502
+                           <div class="col-md-6 mb-6 mb-xs">
+                             <h4 class="text-uppercase mb-4" id="location">LOCATION</h4>
+                              <p class="lead mb-0" id="location2">PUT YOUR LOCATION HERE
+                                 <br>AND ALSO HERE
                               </p>
                            </div>
                            <div class="col-md-4 mb-5 mb-lg-0">
-                              <h4 class="text-uppercase mb-4" id="web">Around the Web</h4>
+                              <h4 class="text-uppercase mb-4" id="web">FOLLOW US</h4>
                               <ul class="list-inline mb-0">
                                  <li class="list-inline-item">
                                     <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
@@ -48,23 +48,13 @@
                                  </li>
                               </ul>
                            </div>
-                           <div class="col-md-4">
-                              <h4 class="text-uppercase mb-4" id="links">Links</h4>
-                              <p class="lead mb-0" id="links2"></p>
-                              <ul id="listnobull">
-                                 <li>
-                                    <a href="#" id="about">About Us</a>
-                                 </li>
-                                 <li><a href="#" id="privacy">Privacy Policy</a></li>
-                                 <li><a href="#" id="find"> Find Polling Location</a> </li>
-                              </ul>
-                           </div>
+                           
                         </div>
                      </div>
                   </footer>
                   <br>
                   <div class="row float-right">
-                     <button type="button" class="btn btn-light"><a href="#top" >Back to Top!</a></button>
+                     
                   </div>
                </div>
             </div>
@@ -78,10 +68,24 @@
 
 </template>
 
+<style scope>
+
+#jumbo {
+     font-family: "Fugaz One", cursive;
+     background-color: rgb(14, 77, 88);
+     color:white;
+}
+#button1 {
+    background-color: white;
+}
+
+#location2 {
+
+    
+}
 
 
-
-
+</style>
 
 
 
