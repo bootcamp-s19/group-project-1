@@ -53,9 +53,8 @@ h3,
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: black;
-    /* opacity: 0.7;
-    filter: alpha(opacity=70); */
+   background-color:rgba(21, 22, 22, 0.7);
+  
     color: white;
     padding-left: 70px;
     padding-right: 70px;
@@ -69,9 +68,8 @@ h3,
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color:black;
-    /* opacity: 0.7;
-    filter: alpha(opacity=70); */
+  background-color:rgba(21, 22, 22, 0.7);
+  
     color: white;
     padding-left: 70px;
     padding-right: 70px;
@@ -85,9 +83,8 @@ h3,
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color:black;
-    /* opacity: 0.7;
-    filter: alpha(opacity=70); */
+   background-color:rgba(21, 22, 22, 0.7);
+  
     color: white;
     padding-left: 70px;
     padding-right: 70px;
@@ -101,9 +98,8 @@ h3,
     position: absolute;
     bottom: 100px;
     left: 180px;
-    background-color:black;
-    /* opacity: 0.7;
-    filter: alpha(opacity=70); */
+    background-color:rgba(21, 22, 22, 0.7);
+  
     color: white;
     padding-left: 70px;
     padding-right: 70px;
