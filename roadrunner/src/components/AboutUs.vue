@@ -1,13 +1,15 @@
 <template>
-  <div class="jumbotron jumbotron-fluid" id="AboutUs">
+  <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <div class="row">
         <div class="col">
           <center>
-            <h1>About Us</h1>
+            <h1 id="AboutUs">About Us</h1>
           </center>
           <p>Road-Runner Exotic Car Rental allows you to experience a thrill that will last long after the rental return.</p>
           <p>Specializing in exotic, rare, and and exclusive cars, we provide a service unmatched by the car industry.</p>
+          <p> additional text additional text additional text additional text additional text additional text additional text </p>
+          <p> additional text additional text additional text additional text additional text additional text additional text </p>
 
           <br>
           <br>
@@ -26,17 +28,17 @@
           <div class="row">
             <div class="col">
               <h1>
-                <i class="material-icons">filter_1</i>
+                <i class="material-icons">filter_1</i><span> Subscribe </span>
               </h1>
             </div>
             <div class="col">
               <h1>
-                <i class="material-icons">filter_2</i>
+                <i class="material-icons">filter_2</i><span> Browse </span>
               </h1>
             </div>
             <div class="col">
               <h1>
-                <i class="material-icons">filter_3</i>
+                <i class="material-icons">filter_3</i><span> Reserve</span>
               </h1>
             </div>
           </div>
@@ -46,31 +48,26 @@
   </div>
 </template>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
+
 export default {
-  name: "AboutUs",
-  props: {
-    msg: String
-  }
-};
+  name: 'AboutUs',
+  
+}
 </script>
 
-<style scoped>
-h1 {
-  text-align: left;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

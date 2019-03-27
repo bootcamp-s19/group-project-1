@@ -1,9 +1,9 @@
 <template>
     <div class="card">
-      <img class="card-img-top shadow pl-1 pr-1" src={{img}} alt={{p-make}}{{model}}>
+      <img class="card-img-top shadow pl-1 pr-1" src={{store.state.img}} alt={{store.state.make}}{{store.state.model}}>
       <div class="card-body">
-        <h4 class="card-title">{{model}}</h4>
-        <p class="card-text">This is a {{year}} {{make}} {{model}}</p>
+        <h4 class="card-title">{{store.state.model}}</h4>
+        <p class="card-text">This is a {{store.state.year}} {{store.state.make}} {{store.state.model}}</p>
         <router-link to="/confirmation" class="btn btn-primary btn-lg">Rent</router-link>
       </div>
     </div>
