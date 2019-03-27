@@ -1,10 +1,10 @@
 <template>
     <div class="card">
-      <img class="card-img-top shadow pl-1 pr-1" src="/img/2016NissanGT-R.png" alt="Nissan Skyline">
+      <img class="card-img-top shadow pl-1 pr-1" src={{img}} alt={{p-make}}{{model}}>
       <div class="card-body">
-        <h4 class="card-title">GT-R</h4>
-        <p class="card-text">This is a 2016 Nissan GT-R</p>
-        <a href="#" class="btn btn-primary btn-lg">Rent</a>
+        <h4 class="card-title">{{model}}</h4>
+        <p class="card-text">This is a {{year}} {{make}} {{model}}</p>
+        <router-link to="/confirmation" class="btn btn-primary btn-lg">Rent</router-link>
       </div>
     </div>
 </template>
@@ -13,6 +13,10 @@
 export default {
   name: 'carCards',
   props: {
+    img: Image,
+    model: String,
+    year: Number,
+    make: String,
     
   }
 }

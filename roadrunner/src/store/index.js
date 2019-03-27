@@ -9,21 +9,105 @@ Vue.use(Vuex)
 const state = { 
     cars: [
       {
-        make: "dodge",
-        model: "viper",
-        color: "red",
+        id: "C1",
+        make: "Nissan",
+        model: "GT-R",
+        year: "2016",
+        color: "Black",
         rented: false,
-        img: "image location",
-        location: "123 awesome inc way"
+        img: "../img/2016NissanGT-R.png",
+        location: []
       },
       {
-        make: "chevy",
-        model: "corvette",
-        color: "blue",
-        rented: true,
-        img: "image location",
-        location: "456 lexington road"
-      }
+        id: "C2",
+        make: "Bentley",
+        model: "Continental",
+        year: "2015",
+        color: "Red",
+        rented: false,
+        img: "../img/2015BentleyContinentalGTC.png",
+        location: []
+      },
+      {
+        id: "C3",
+        make: "Ferrai",
+        model: "Spider",
+        year: "2015",
+        color: "Yellow",
+        rented: false,
+        img: "../img/2015Ferrari458ItaliaSpider.png",
+        location: []
+      },
+      {
+        id: 'C4',
+        make: "BMW",
+        model: "I8",
+        year: "2016",
+        color: "White",
+        rented: false,
+        img: "../img/2016BMWi8.png",
+        location: []
+      },
+      {
+        id: "C5",
+        make: "Lamborghini",
+        model: "Huracan",
+        year: "2016",
+        color: "Green",
+        rented: false,
+        img: "../img/2016LamborghiniHuracan.png",
+        location: []
+      },
+      {
+        id: "C6",
+        make: "Mclaren",
+        model: "650s Spider",
+        year: "2016",
+        color: "Orange",
+        rented: false,
+        img: "../img/2016Mclaren650sSpider.png",
+        location: []
+      },
+      {
+        id: "C7",
+        make: "Porsche",
+        model: "911",
+        year: "2016",
+        color: "Red",
+        rented: false,
+        img: "../img/2016Porsche911GT3.png",
+        location: []
+      },
+      {
+        id: "C8",
+        make: "Lamborghini",
+        model: "Aventador",
+        year: "2017",
+        color: "Green",
+        rented: false,
+        img: "../img/2017LamborghiniAventadorRoadster.png",
+        location: []
+      },
+      {
+        id: "C9",
+        make: "Lamborghini",
+        model: "Huracan Spyder",
+        year: "2017",
+        color: "Yellow",
+        rented: false,
+        img: "../img/2017LamborghiniHuracanSpyder.png",
+        location: []
+      },
+      {
+        id: "C10",
+        make: "Ferrari",
+        model: "488 Spider",
+        year: "2018",
+        color: "White",
+        rented: false,
+        img: "../img/2018Ferrai488Spider.png",
+        location: []
+      },
     ],
     users: [
       {
