@@ -6,7 +6,10 @@
       <h1>ROAD-RUNNER</h1>
       <h3>Exotic Car Rental</h3>
       <button type="button" class="btn btn-dark btn-lg">SEARCH</button>
-      <button type="button" class="btn btn-dark btn-lg">SUBSCRIBE</button>
+       <button id="show-modal" @click="showModal = true" class="btn btn-dark btn-lg">SUBSCRIBE</button>
+            <Subscribe v-if="showModal" @close="showModal = false"></Subscribe>
+     
+           
       <br>
       <br>
 
@@ -19,6 +22,10 @@
 </template>
 
 <style scoped>
+
+
+
+
 h1,
 h3,
 .btn {
@@ -134,8 +141,20 @@ h3,
 
 
 <script>
+import Subscribe from './Subscribe'; 
+
+
+
 export default {
-  name: "Header"
+  name: "Header",
+  components: {
+    Subscribe,
+  },
+  data(){
+    return {
+      showModal: false,
+    }
+  }
 };
 </script>
 
