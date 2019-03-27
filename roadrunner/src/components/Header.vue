@@ -6,7 +6,7 @@
 
  <div class="text-block"> 
     <h1>ROAD-RUNNER</h1>
-    <h3>exotic car rental</h3>
+    <h3>Exotic Car Rental</h3>
     <button type="button" class="btn btn-dark">SEARCH</button>
      <button type="button" class="btn btn-dark">SUBSCRIBE</button>
      <br><br>
