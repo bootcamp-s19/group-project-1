@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
       <a class="navbar-brand" href="#">
-        <img src="/img/RoadRunner.png">
+        <img src="/img/logo2.png">
       </a>
 
      
@@ -11,13 +11,13 @@
 
  <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
-          <b-navbar-brand href="#">Home</b-navbar-brand>
+          <b-navbar-brand href="#">HOME</b-navbar-brand>
         </b-navbar-nav>
 
 
     
         <b-navbar-nav>
-          <b-navbar-brand href="#AboutUs">About Us</b-navbar-brand>
+          <b-navbar-brand href="#AboutUs">ABOUT US</b-navbar-brand>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -25,7 +25,7 @@
           <b-navbar-nav>
             <li class="nav-item active">
               <a class="nav-link" href="#">
-                <button id="show-modal" @click="showModal = true">Subscribe</button>
+                <link id="show-modal" @click="showModal = true">SUBSCRIBE</link>
                 <Subscribe v-if="showModal" @close="showModal = false"></Subscribe>
                 <span class="sr-only">(current)</span>
               </a>
@@ -34,7 +34,7 @@
           <b-navbar-nav>
             <li class="nav-item active">
               <a class="nav-link" href="#">
-                <button id="show-modal" @click="showLoginModal = true">Login</button>
+                <link id="show-modal" @click="showLoginModal = true">LOGIN</link>
                 <Login v-if="showLoginModal" @close="showLoginModal = false"></Login>
                 <span class="sr-only">(current)</span>
               </a>
