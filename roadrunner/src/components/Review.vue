@@ -1,4 +1,5 @@
 <template>
+  <div class="container-fluid">
       <form class="review-form" @submit.prevent="onSubmit">
       
         <p class="error" v-if="errors.length">
@@ -34,6 +35,7 @@
         </p>    
       
     </form>
+  </div>
 </template>
 
 <script>
@@ -44,19 +46,20 @@ export default {
         name: null,
         review: null,
         rating: null,
-        errors: []
+        errors: [],
+        productReview: {}
       }
     },
     methods: {
       onSubmit() {
         this.errors = []
         if(this.name && this.review && this.rating) {
-          let productReview = {
+           this.productReview = {
             name: this.name,
             review: this.review,
             rating: this.rating
           }
-          //this.$emit('review-submitted', productReview)
+          this.$emit('review-submitted', this.productReview)
           this.name = null
           this.review = null
           this.rating = null
