@@ -1,7 +1,7 @@
 
 <template>
   <div class="confirmation">
-    <h1>SUUUUUp</h1>
+    <h1>Car Title</h1>
   <CarDetails></CarDetails>
   </div>
 </template>

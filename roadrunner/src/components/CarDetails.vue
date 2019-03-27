@@ -1,33 +1,35 @@
 <template>
   <div class="confirmation">
-    <p>SUUUUUUP</p>
-    <ul>
-      <li v-for="detail in details">{{ detail }}</li>
-    </ul>
 
     <div class="product">
-      <div class="product-image">
+      <div class="product-image" width="50%">
         <img :src="image">
       </div>
-
+    
       <div class="product-info">
         <h1>{{ product }}</h1>
         <p v-if="inStock">In Stock</p>
         <p v-else>Out of Stock</p>
         <p>Availability: {{ shipping }}</p>
 
+    <ul>
+      <li v-for="detail in details">{{ detail }}</li>
+    </ul>
+
         <product-details :details="details"></product-details>
 
         <button
           v-on:click="RentMe"
           :disabled="!inStock"
-          :class="{ disabledButton: !inStock }"
+          :class="{ disabledButton: !inStock }" 
+
         >Reserve Me!</button>
+
       </div>
     </div>
     <div class="span8" id="map">
       <iframe
-        width="100%"
+        width="50%"
         height="350"
         frameborder="0"
         scrolling="no"
@@ -74,7 +76,7 @@ export default {
   },
   data() {
     return {
-      product: "Car Name",
+      product: "Details",
       brand: "Vue Mastery",
       selectedVariant: 0,
       details: ["Make:", "model:", "Color:", "Rented:"],
@@ -82,7 +84,7 @@ export default {
         {
           variantId: 2234,
           variantImage: 'img/2015BentleyContinentalGTC.png',
-          variantQuantity: 10
+          variantQuantity: 3
         }
       ],
       cart: 0, 
@@ -115,7 +117,7 @@ export default {
       if (this.premium) {
         return "Available";
       }
-      return 2.99;
+    
     }
   }
 };
@@ -134,7 +136,7 @@ body {
 
 img {
   border: 1px solid #d8d8d8;
-  width: 70%;
+  width: 50%;
   margin: 40px;
   box-shadow: 0px 0.5px 1px #d8d8d8;
 }
@@ -162,6 +164,7 @@ img {
 }
 
 button {
+
   margin-top: 30px;
   border: none;
   background-color: #1e95ea;
@@ -193,6 +196,7 @@ textarea {
 }
 
 li {
+  text-align: left;
   list-style: none;
 }
 
