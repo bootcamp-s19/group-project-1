@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-  <AboutUs></AboutUs>
   <Header></Header>
+  <AboutUs></AboutUs>
+  
 
    
 
