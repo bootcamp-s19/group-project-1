@@ -3,6 +3,7 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img src="/img/RoadRunner.png">
+        
       </a>
       <button
         class="navbar-toggler d-lg-none"
@@ -24,7 +25,7 @@
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#AboutUs">
               About Us
               <span class="sr-only">(current)</span>
             </a>

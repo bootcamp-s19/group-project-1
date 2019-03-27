@@ -3,20 +3,37 @@
     <transition name="modal">
       <div class="modal-mask">
         <div class="modal-wrapper">
-          <div class="modal-container">
-            <div class="modal-header">
-              <slot name="header">
-                <h3>Subscribe</h3>
-              </slot>
-            </div>
-            <div class="modal-body">
-              <slot name="body">
-                <form>
+          <form>
+            <div class="modal-container">
+              <div class="modal-header">
+                <slot name="header">
+                  <h3>Subscribe</h3>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                    @click="$emit('close')"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </slot>
+              </div>
+              <div class="modal-body">
+                <slot name="body">
                   <div class="text-left">
+                    <p v-if="errors.length" class="error">
+                      <b>Please correct the following error(s):</b>
+                    </p>
+                    <ul>
+                      <li v-for="error in errors" class="error">{{ error }}</li>
+                    </ul>
+                    <br>
+
                     <p>Please select one of the membership types below:</p>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="optradio"> Standard
+                        <input type="radio" name="optradio" checked="checked"> Standard
                       </label>
                     </div>
                     <div class="radio">
@@ -92,17 +109,17 @@
                       </div>
                     </div>
                   </div>
-                </form>
-              </slot>
+                </slot>
+              </div>
+              <div class="modal-footer">
+                <slot name="footer">
+                  <!-- default footer -->
+                  <button class="btn btn-primary" type="button" @click="checkForm" value="Submit">Submit</button>
+                  <button type="button" class="btn btn-default" @click="reset">Reset</button>
+                </slot>
+              </div>
             </div>
-            <div class="modal-footer">
-              <slot name="footer">
-                <!-- default footer -->
-                <button class="btn btn-primary" @click="$emit('close')">Submit</button>
-                <button type="button" class="btn btn-default" @click="reset">Reset</button>
-              </slot>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </transition>
@@ -114,21 +131,54 @@ export default {
   name: "subscribe",
   data() {
     return {
-        name: '',
-        email: '',
-        age: '',
-        phone: '',
-        password: '',
-        senior: false
+      errors: [],
+      name: "",
+      email: "",
+      age: "",
+      phone: "",
+      password: "",
+      senior: false
     };
   },
   methods: {
     reset() {
-      this.name = '',
-      this.email= '',
-      this.age = '',
-      this.phone = '',
-      this.password = ''
+      (this.name = ""),
+        (this.email = ""),
+        (this.age = ""),
+        (this.phone = ""),
+        (this.password = "");
+    },
+    checkForm: function(e) {
+      if (this.name && this.email && this.age && this.phone && this.password) {
+        this.$emit('close');
+        this.$router.push({name: "home"});
+      }
+
+      this.errors = [];
+
+      if (!this.name) {
+        this.errors.push("Name is required");
+      }
+      if (!this.email) {
+        this.errors.push('Email required.');
+      } else if (!this.validEmail(this.email)) {
+        this.errors.push('Valid email required.');
+      }
+      if (!this.age) {
+        this.errors.push("Age is required");
+      }
+      if (!this.phone) {
+        this.errors.push("Phone is required");
+      }
+      if (!this.password) {
+        this.errors.push("Password is required");
+      }
+
+      //e.preventDefault();
+    },
+    validEmail: function(email) {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
     }
   }
 };
@@ -188,5 +238,9 @@ export default {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.error {
+  color: rgb(206, 0, 0);
 }
 </style>
