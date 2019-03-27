@@ -2,7 +2,6 @@
   <div class="home">
   <Header></Header>
   <AboutUs></AboutUs>
-  
 
    
 
@@ -16,14 +15,12 @@
 
 
 
-
 export default {
   name: 'home',
   components: {
 
     AboutUs,
-    Header
-    
+    Header,
 
   }
 }
