@@ -1,23 +1,34 @@
 <template>
-    <div class="card">
-      <img class="card-img-top shadow pl-1 pr-1" src={{store.state.img}} alt={{store.state.make}}{{store.state.model}}>
-      <div class="card-body">
-        <h4 class="card-title">{{store.state.model}}</h4>
-        <p class="card-text">This is a {{store.state.year}} {{store.state.make}} {{store.state.model}}</p>
-        <router-link to="/confirmation" class="btn btn-primary btn-lg">Rent</router-link>
-      </div>
-    </div>
+<div>
+  <b-card
+    :title="carObj.model"
+    :img-src="carObj.img"
+    :img-alt="carDetails"
+    img-top
+    :tag="carDetails"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      {{carObj.year}} {{carObj.make}} {{carObj.model}}.
+    </b-card-text>
+
+    <router-link to="/confirmation" class="btn btn-primary btn-lg">Rent</router-link>
+  </b-card>
+</div>
 </template>
 
 <script>
 export default {
   name: 'carCards',
   props: {
-    img: Image,
-    model: String,
-    year: Number,
-    make: String,
-    
+    carObj: Object
+      
+  },
+  computed: {
+    cardetails(){
+      return this.carObj.make + " " + this.carObj.model
+    }
   }
 }
 </script>
@@ -26,10 +37,13 @@ export default {
 <style scoped>
 .card {
   background-color: rgb(112, 112, 112);
+  color:aliceblue
 }
 img {
   max-width: 100%;
   height: auto;
   background-color: silver;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 </style>

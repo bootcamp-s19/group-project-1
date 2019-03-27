@@ -1,27 +1,40 @@
 <template>
   <div class="home">
-    <carCards></carCards>
   <Header></Header>
   <AboutUs></AboutUs>
+    <div class="container">
+    <div class="card-deck">
+        <carCards v-for="carObj in cars" v-bind:carObj="carObj" :key="carObj.id"></carCards>
+    </div>
+</div>
   
-
-   
 
   </div>
 </template>
 
 <script>
-    
+  import { mapState } from 'vuex';
+      
   import AboutUs from '../components/AboutUs.vue';
   import Header from '../components/Header.vue';
-  import carCards from '../components/carCards.vue'
+  import carCards from '../components/carCards.vue';
 
 export default {
   name: 'home',
   components: {
-    carCards,
     AboutUs,
-    Header
-  }
+    Header,
+    carCards,
+  },
+  data (){
+    return {
+    }
+  },
+  methods: {
+
+  },
+  computed: mapState({
+    cars: state => state.cars
+  })
 }
 </script>
