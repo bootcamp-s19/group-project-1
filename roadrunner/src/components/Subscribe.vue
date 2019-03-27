@@ -4,7 +4,7 @@
       <div class="modal-mask">
         <div class="modal-wrapper">
           <form>
-            <div class="modal-container">
+            <div class="modal-container container-fluid">
               <div class="modal-header">
                 <slot name="header">
                   <h3>Subscribe</h3>
@@ -211,6 +211,7 @@ export default {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
   font-family: Helvetica, Arial, sans-serif;
+  color: black;
 }
 
 .modal-header h3 {
