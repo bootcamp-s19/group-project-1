@@ -1,10 +1,10 @@
 <template>
-  <div class="jumbotron jumbotron-fluid" id="AboutUs">
+  <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <div class="row">
         <div class="col">
           <center>
-            <h1>About Us</h1>
+            <h1 id="AboutUs">About Us</h1>
           </center>
           <p>Road-Runner Exotic Car Rental allows you to experience a thrill that will last long after the rental return.</p>
           <p>Specializing in exotic, rare, and and exclusive cars, we provide a service unmatched by the car industry.</p>
