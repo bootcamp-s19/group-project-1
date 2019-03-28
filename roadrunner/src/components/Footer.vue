@@ -72,7 +72,7 @@
 
 #jumbo {
      font-family: "Fugaz One", cursive;
-     background-color: rgb(14, 77, 88);
+     background-color: #343A40;
      color:white;
 }
 #button1 {

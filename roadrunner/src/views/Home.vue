@@ -9,6 +9,9 @@
   </div>
 </template>
 
+
+
+
 <script>
     
   import AboutUs from '../components/AboutUs.vue';
