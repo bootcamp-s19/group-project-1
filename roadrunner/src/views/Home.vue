@@ -4,7 +4,7 @@
     <div class="container">
       <h1>Our Recommended Cars!</h1>
       <b-card-group deck>
-        <carCards v-for="carObj in cars" v-bind:carObj="carObj" :key="carObj.id"></carCards>
+        <carCards v-for="carObj in promotedCars" v-bind:carObj="carObj" :key="carObj.id"></carCards>
       </b-card-group>
   </div>
   <AboutUs></AboutUs>
@@ -38,14 +38,13 @@ export default {
   },
   data (){
     return {
+      promotedCars: this.$store.getters.promotedCars
     }
   },
   methods: {
-
   },
   computed: mapState({
-    cars: state => state.cars
-  })
-
+    cars: state => state.cars,
+  }),
   }
 </script>

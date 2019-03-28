@@ -29,7 +29,7 @@ export default {
     year: state => state.cars.year,
     color: state => state.cars.color,
     availability: state => state.cars.availability,
-    isPromoted: state => state.cars.isPromoted,
+    isPromo: state => state.cars.isPromo,
     img: state => state.cars.img,
     location: state => state.cars.location
   }),
