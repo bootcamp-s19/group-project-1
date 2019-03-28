@@ -25,7 +25,7 @@
           <b-navbar-nav>
             <li class="nav-item active">
               <a class="nav-link" href="#">
-                <link id="show-modal" @click="showModal = true">SUBSCRIBE</link>
+                <button id="show-modal" @click="showModal = true">SUBSCRIBE</button>
                 <Subscribe v-if="showModal" @close="showModal = false"></Subscribe>
                 <span class="sr-only">(current)</span>
               </a>
@@ -34,7 +34,7 @@
           <b-navbar-nav>
             <li class="nav-item active">
               <a class="nav-link" href="#">
-                <link id="show-modal" @click="showLoginModal = true">LOGIN</link>
+                <button id="show-modal" @click="showLoginModal = true">LOGIN</button>
                 <Login v-if="showLoginModal" @close="showLoginModal = false"></Login>
                 <span class="sr-only">(current)</span>
               </a>
@@ -49,10 +49,7 @@
 </template>
 
 
-<style scoped>
-#NavBar {
-}
-</style>
+
 
 
 
@@ -76,7 +73,7 @@ export default {
   name: "NavBar",
   components: {
     Subscribe,
-    Login
+    Login,
   },
   props: {
     msg: String
