@@ -1,37 +1,25 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
-  
-
 
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>|
       <router-link to="/confirmation">About</router-link>
     </div>
     <router-view/>
-    
   </div>
 </template>
 
 <script>
-
-
 import NavBar from "./components/NavBar.vue";
-
-
 
 export default {
   name: "app",
   components: {
-
-
-    NavBar,
-    
-
+    NavBar
   },
   data() {
-    return {
-    };
+    return {};
   }
 };
 </script>
@@ -43,6 +31,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>

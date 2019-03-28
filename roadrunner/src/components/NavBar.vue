@@ -5,17 +5,13 @@
         <img src="/img/logo3.png">
       </a>
 
-     
-
       <b-navbar-toggle target="nav_collapse"/>
 
- <b-collapse is-nav id="nav_collapse">
+      <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-navbar-brand href="#">HOME</b-navbar-brand>
         </b-navbar-nav>
 
-
-    
         <b-navbar-nav>
           <b-navbar-brand href="#AboutUs">ABOUT US</b-navbar-brand>
         </b-navbar-nav>
@@ -44,25 +40,7 @@
       </b-collapse>
     </b-navbar>
   </div>
-
-  
 </template>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script>
@@ -73,7 +51,7 @@ export default {
   name: "NavBar",
   components: {
     Subscribe,
-    Login,
+    Login
   },
   props: {
     msg: String
