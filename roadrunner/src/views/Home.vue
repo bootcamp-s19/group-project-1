@@ -2,6 +2,7 @@
   <div class="home">
   <Header></Header>
   <AboutUs></AboutUs>
+  <Footer></Footer>
 
    
 
@@ -12,6 +13,7 @@
     
   import AboutUs from '../components/AboutUs.vue';
   import Header from '../components/Header.vue';
+  import Footer from '../components/Footer.vue';
 
 
 
@@ -21,6 +23,7 @@ export default {
 
     AboutUs,
     Header,
+    Footer
 
   }
 }
