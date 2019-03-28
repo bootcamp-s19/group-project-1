@@ -11,13 +11,17 @@
 
  <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
-          <b-navbar-brand href="#">HOME</b-navbar-brand>
+          <b-navbar-brand href="/">HOME</b-navbar-brand>
         </b-navbar-nav>
 
 
     
         <b-navbar-nav>
           <b-navbar-brand href="#AboutUs">ABOUT US</b-navbar-brand>
+        </b-navbar-nav>
+
+        <b-navbar-nav>
+          <b-navbar-brand href="#inventory">INVENTORY</b-navbar-brand>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->

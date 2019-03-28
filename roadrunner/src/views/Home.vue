@@ -1,16 +1,20 @@
 <template>
   <div class="home">
   <Header></Header>
-  <AboutUs></AboutUs>
-<<<<<<< HEAD
     <div class="container">
-    <div class="card-deck">
+      <h1>Our Recommended Cars!</h1>
+      <b-card-group deck>
         <carCards v-for="carObj in cars" v-bind:carObj="carObj" :key="carObj.id"></carCards>
-    </div>
-</div>
+      </b-card-group>
+  </div>
+  <AboutUs></AboutUs>
+  <div class="container shadow-lg pl-5 p-3 mb-5 rounded">
+    <Search class="pb-3" id="inventory"></Search>
+    <b-card-group deck>
+        <carCards v-for="carObj in cars" v-bind:carObj="carObj" :key="carObj.id"></carCards>
+    </b-card-group>
+  </div>
   
-=======
->>>>>>> a690d7087eb930945b14d04d9b64f2ad3e7547bd
 
   </div>
 </template>
@@ -20,20 +24,17 @@
       
   import AboutUs from '../components/AboutUs.vue';
   import Header from '../components/Header.vue';
-<<<<<<< HEAD
   import carCards from '../components/carCards.vue';
-=======
+  import Search from '../components/Search.vue';
 
-
->>>>>>> a690d7087eb930945b14d04d9b64f2ad3e7547bd
 
 export default {
   name: 'home',
   components: {
     AboutUs,
     Header,
-<<<<<<< HEAD
     carCards,
+    Search,
   },
   data (){
     return {
@@ -45,9 +46,6 @@ export default {
   computed: mapState({
     cars: state => state.cars
   })
-=======
 
   }
->>>>>>> a690d7087eb930945b14d04d9b64f2ad3e7547bd
-}
 </script>

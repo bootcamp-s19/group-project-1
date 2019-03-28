@@ -9,7 +9,7 @@
     style="max-width: 20rem;"
     class="mb-2"
   >
-    <b-card-text>
+    <b-card-text class="text-center" style="color: aliceblue">
       {{carObj.year}} {{carObj.make}} {{carObj.model}}.
     </b-card-text>
 
@@ -37,7 +37,8 @@ export default {
 <style scoped>
 .card {
   background-color: rgb(112, 112, 112);
-  color:aliceblue
+  color:aliceblue;
+  text-align: center;
 }
 img {
   max-width: 100%;
