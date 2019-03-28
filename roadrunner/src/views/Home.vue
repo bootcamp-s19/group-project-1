@@ -14,7 +14,7 @@
         <carCards v-for="carObj in cars" v-bind:carObj="carObj" :key="carObj.id"></carCards>
     </b-card-group>
   </div>
-  
+  <Footer></Footer>
 
   </div>
 </template>
@@ -26,12 +26,7 @@
   import Header from '../components/Header.vue';
   import carCards from '../components/carCards.vue';
   import Search from '../components/Search.vue';
-
-
-<script>
-import AboutUs from "../components/AboutUs.vue";
-import Header from "../components/Header.vue";
-import Footer from "../components/Footer.vue";
+  import Footer from "../components/Footer.vue";
 
 export default {
   name: "home",
