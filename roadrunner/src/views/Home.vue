@@ -28,13 +28,19 @@
   import Search from '../components/Search.vue';
 
 
+<script>
+import AboutUs from "../components/AboutUs.vue";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
+
 export default {
-  name: 'home',
+  name: "home",
   components: {
     AboutUs,
     Header,
     carCards,
     Search,
+    Footer,
   },
   data (){
     return {
@@ -47,4 +53,5 @@ export default {
     cars: state => state.cars,
   }),
   }
+
 </script>

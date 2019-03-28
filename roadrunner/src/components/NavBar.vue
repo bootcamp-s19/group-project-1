@@ -1,23 +1,19 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark" variant="info" class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="/img/logo2.png">
+        <img src="/img/logo3.png">
       </a>
-
-     
 
       <b-navbar-toggle target="nav_collapse"/>
 
- <b-collapse is-nav id="nav_collapse">
+      <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-navbar-brand href="/">HOME</b-navbar-brand>
         </b-navbar-nav>
 
-
-    
         <b-navbar-nav>
-          <b-navbar-brand href="#AboutUs">ABOUT US</b-navbar-brand>
+          <b-navbar-brand href="/#AboutUs">ABOUT US</b-navbar-brand>
         </b-navbar-nav>
 
         <b-navbar-nav>
@@ -28,8 +24,8 @@
         <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
             <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <link id="show-modal" @click="showModal = true">SUBSCRIBE</link>
+              <a data-toggle="Subscribe" data-target="#Subscribe">
+                <button id="show-modal" @click.prevent="showModal = true" class="white">SUBSCRIBE</button>
                 <Subscribe v-if="showModal" @close="showModal = false"></Subscribe>
                 <span class="sr-only">(current)</span>
               </a>
@@ -37,8 +33,8 @@
           </b-navbar-nav>
           <b-navbar-nav>
             <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <link id="show-modal" @click="showLoginModal = true">LOGIN</link>
+              <a data-toggle="Login" data-target="#Login">
+                <button id="show-modal" @click.prevent="showLoginModal = true" class="white">LOGIN</button>
                 <Login v-if="showLoginModal" @close="showLoginModal = false"></Login>
                 <span class="sr-only">(current)</span>
               </a>
@@ -48,58 +44,6 @@
       </b-collapse>
     </b-navbar>
   </div>
-
-  <!-- <div>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-collapse">
-      <a class="navbar-brand" href="#">
-        <img src="/img/RoadRunner.png">
-      </a>
-
-      <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#AboutUs">
-              About Us
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              <button id="show-modal" @click="showModal = true">Subscribe</button>
-              <Subscribe v-if="showModal" @close="showModal = false"></Subscribe>
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              <button id="show-modal" @click="showLoginModal = true">Login</button>
-              <Login v-if="showLoginModal" @close="showLoginModal = false"></Login>
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>-->
 </template>
 
 
@@ -125,8 +69,11 @@ export default {
 };
 </script>
 
-<style scoped>
-#NavBar {
-  background-color: pink;
+<style>
+.white {
+  color: white;
+  background-color: #343a40 !important;
+  border: #343a40;
+  font-size: 1.25rem;
 }
 </style>

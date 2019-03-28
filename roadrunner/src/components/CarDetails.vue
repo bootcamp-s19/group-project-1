@@ -41,7 +41,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="leftcolumn">
+      <div class="col"></div>
         <div class="col">
           <div>
             <h3> Reviews </h3>
@@ -55,13 +55,16 @@
                   </li>
               </ul>
           </div>
-          </div>
       </div>
-      <div class="rightcolumn">
-        <div class="col"> <Review @review-submitted="addReview"></Review></div>
-      </div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"> <Review @review-submitted="addReview"></Review></div>
+      <div class="col"></div>
     </div>
   </div>
+
 
   </div>
 </template> 
@@ -200,16 +203,6 @@ li {
   list-style: none;
 }
 
-.leftcolumn {   
-  float: left;
-  width: 25%;
-}
-
-.rightcolumn {
-  float: left;
-  width: 75%;
-  padding-left: 20px;
-}
 </style>
 
 

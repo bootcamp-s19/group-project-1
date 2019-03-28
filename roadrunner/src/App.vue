@@ -1,20 +1,14 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
-  
- 
+
     <router-view/>
-    
   </div>
 </template>
 
 <script>
-
-
 import NavBar from "./components/NavBar.vue";
 import { mapState } from 'vuex';
-
-
 
 export default {
   name: "app",
@@ -44,6 +38,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>
