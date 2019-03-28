@@ -103,7 +103,7 @@ textarea {
 }
 
 select {
-    width: 40px;
+    width: 60px;
     height: 40px;
     border: 1px solid #d8d8d8;
 }
