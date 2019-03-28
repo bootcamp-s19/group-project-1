@@ -4,7 +4,8 @@
       <div class="row">
         <div class="col">
           <center>
-            <h1 id="AboutUs">About Us</h1>
+            <h1 id="AboutUs"><strong>About Us</strong></h1>
+            <br>
           </center>
           <p>Road-Runner Exotic Car Rental allows you to experience a thrill that will last long after the rental return.</p>
           <p>Specializing in exotic, rare, and and exclusive cars, we provide a service unmatched by the car industry.</p>
@@ -17,7 +18,7 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <h1>How It Works</h1>
+              <h1><strong>How It Works</strong></h1>
             </div>
           </div>
         </div>
@@ -29,6 +30,8 @@
             <div class="col">
               <h1>
                 <i class="material-icons">filter_1</i><span> Subscribe </span>
+                <br>
+                <p>Choose from over 2,000 exotic car models</p>
               </h1>
             </div>
             <div class="col">
